@@ -1,0 +1,9 @@
+<h1>Votre liste, vos films !<h1>
+
+<div>
+  <% @lists.each do |list| %>
+    <%= link_to list_path(list) do %>
+      <%= list.name %>
+    <% end %>
+  <% end %>
+</div>
